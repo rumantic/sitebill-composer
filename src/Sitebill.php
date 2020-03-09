@@ -4,7 +4,7 @@ class Sitebill
 {
     public static function world()
     {
-        return 'Hello World, Composer from Sitebill package!';
+        return view('sitebill::index');
     }
 }
 
