@@ -13,6 +13,8 @@ class SitebillServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->app->make('Sitebill\Http\Controllers\SitebillGridController');
+        $this->app->register('Sitebill\Http\Controllers\SitebillGridController');
         /*
         $this->app->register(VoyagerEventServiceProvider::class);
         $this->app->register(ImageServiceProvider::class);
@@ -57,6 +59,7 @@ class SitebillServiceProvider extends ServiceProvider
     public function boot(Router $router, Dispatcher $event)
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'sitebill');
+        $this->loadRoutesFrom(__DIR__.'/../routes/routes.php');
     }
 
 }
