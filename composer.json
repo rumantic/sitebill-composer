@@ -18,5 +18,12 @@
         "psr-0": {
             "Sitebill": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sitebill\\SitebillServiceProvider",
+            ]
+        }
     }
 }
