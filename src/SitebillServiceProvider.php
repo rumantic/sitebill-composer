@@ -2,6 +2,8 @@
 
 namespace Sitebill;
 
+use Illuminate\Contracts\Events\Dispatcher;
+use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
 class SitebillServiceProvider extends ServiceProvider
