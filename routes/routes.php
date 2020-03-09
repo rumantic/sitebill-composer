@@ -1,2 +1,2 @@
 <?php
-Route::get('sitebill/coretest', 'SitebillGridController@index');
+Route::get('sitebill/coretest', 'Sitebill@index');

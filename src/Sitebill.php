@@ -1,6 +1,8 @@
 <?php
 namespace Sitebill;
-class Sitebill
+use Illuminate\Routing\Controller;
+
+class Sitebill extends Controller
 {
     public static function world()
     {

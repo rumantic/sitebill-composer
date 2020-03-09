@@ -13,9 +13,14 @@ class SitebillServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        //$this->app->make('Sitebill\Sitebill');
+        $this->app->register('Sitebill\Sitebill');
+
+        /*
         $this->app->make('Sitebill\Http\Controllers\SitebillGridController');
         $this->app->register('Sitebill\Http\Controllers\SitebillGridController');
-        /*
+
+
         $this->app->register(VoyagerEventServiceProvider::class);
         $this->app->register(ImageServiceProvider::class);
         $this->app->register(VoyagerDummyServiceProvider::class);
